@@ -1,0 +1,85 @@
+{
+  "name": "core-dom",
+  "version": "0.0.0",
+  "private": "true",
+  "license": "MIT",
+  "author": "Segun Adebayo <sage@adebayosegun.com>",
+  "description": "A collection of dom utilities",
+  "workspaces": [
+    "packages/*"
+  ],
+  "preconstruct": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "size-limit": [
+    {
+      "path": "packages/tiny-num/**/*.esm.js"
+    },
+    {
+      "path": "packages/tiny-helpers/**/*.esm.js"
+    },
+    {
+      "path": "packages/tiny-list/**/*.esm.js"
+    }
+  ],
+  "scripts": {
+    "size": "yarn build && size-limit",
+    "prepare": "npm-run-all -s prepare:**",
+    "prepare:husky": "husky install",
+    "prepare:preconstruct": "preconstruct dev",
+    "build": "preconstruct build",
+    "clean": "yarn workspaces run clean",
+    "lint:pkgs": "manypkg check",
+    "lint:types": "tsc --noEmit --incremental",
+    "lint:validate": "preconstruct validate",
+    "lint": "npm-run-all -s lint:*",
+    "pkg": "manypkg run",
+    "fix:pkgs": "manypkg fix",
+    "fix:preconstruct": "preconstruct fix",
+    "version:pkgs": "changeset version",
+    "contributors:init": "all-contributors init",
+    "contributors:gen": "all-contributors generate",
+    "release": "changeset publish",
+    "start": "preconstruct watch",
+    "test": "jest --maxWorkers=50%",
+    "test:ci": "jest --runInBand",
+    "gen:pkg": "ts-node scripts/generate.ts"
+  },
+  "dependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
+    "@babel/preset-typescript": "^7.14.5",
+    "@changesets/changelog-github": "^0.4.0",
+    "@changesets/cli": "^2.16.0",
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@manypkg/cli": "^0.18.0",
+    "@preconstruct/cli": "^2.1.0",
+    "@size-limit/preset-small-lib": "^5.0.4",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^16.4.1",
+    "@types/shelljs": "^0.8.9",
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
+    "all-contributors-cli": "6.20.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.31.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^7.0.1",
+    "jest": "^27.0.6",
+    "jest-watch-typeahead": "^0.6.4",
+    "lint-staged": "^11.1.0",
+    "node-plop": "^0.26.2",
+    "npm-run-all": "^4.1.5",
+    "plop": "^2.7.4",
+    "prettier": "^2.3.2",
+    "shelljs": "^0.8.4",
+    "size-limit": "^5.0.4",
+    "ts-jest": "27.0.4",
+    "ts-node": "10.1.0",
+    "typescript": "^4.3.5"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "{{packageName}}",
+  "version": "0.0.0",
+  "description": "{{description}}",
+  "keywords": ["js", "utils", "{{packageName}}"],
+  "author": "Segun Adebayo <sage@adebayosegun.com>",
+  "homepage": "https://github.com/segunadebayo/js-toolkit#readme",
+  "license": "MIT",
+  "main": "dist/{{packageName}}.cjs.js",
+  "module": "dist/{{packageName}}.esm.js",
+  "repository": "https://github.com/segunadebayo/js-tookit/core/tree/main/packages/{{packageName}}",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/segunadebayo/js-tookit/issues"
+  },
+  "scripts": {
+    "clean": "rimraf dist"
+  }
+}

@@ -1,0 +1,6 @@
+/**/*.hbs
+dist
+node_modules
+coverage
+.next
+build
