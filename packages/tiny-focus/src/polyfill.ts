@@ -34,10 +34,7 @@ function getScrollableElements(element: HTMLElement): ScrollableElement[] {
   const rootScrollingElement = doc.scrollingElement || doc.documentElement
 
   while (parent instanceof win.HTMLElement && parent !== rootScrollingElement) {
-    if (
-      parent.offsetHeight < parent.scrollHeight ||
-      parent.offsetWidth < parent.scrollWidth
-    ) {
+    if (parent.offsetHeight < parent.scrollHeight || parent.offsetWidth < parent.scrollWidth) {
       scrollableElements.push({
         element: parent,
         scrollTop: parent.scrollTop,
@@ -60,7 +57,9 @@ function getScrollableElements(element: HTMLElement): ScrollableElement[] {
 
 export function preventScrollPolyfill(el: HTMLElement) {
   const scrollableElements = getScrollableElements(el)
-  for (const { element, scrollTop, scrollLeft } of scrollableElements) {
+  const len = scrollableElements.length
+  for (let i = 0; i < len; i++) {
+    const { element, scrollTop, scrollLeft } = scrollableElements[i]
     element.scrollTop = scrollTop
     element.scrollLeft = scrollLeft
   }

@@ -13,7 +13,7 @@ type FocusableElement = {
 export function focus(el: FocusableElement, options: FocusOptions = {}) {
   const { preventScroll = true, select } = options
 
-  if (isDisabled(el) || typeof el.focus !== "function") {
+  if (isDisabled(el) || t(el.focus) !== "Function") {
     return
   }
 
@@ -29,8 +29,10 @@ export function focus(el: FocusableElement, options: FocusOptions = {}) {
   }
 }
 
+export const t = (v: any) => Object.prototype.toString.call(v).slice(8, -1)
+
 const isElement = (v: any): v is HTMLElement =>
-  typeof v === "object" && v.nodeType === Node.ELEMENT_NODE && typeof v.nodeName === "string"
+  t(v) === "Object" && v.nodeType === Node.ELEMENT_NODE && t(v.nodeName) === "String"
 
 function isDisabled(el: unknown) {
   if (!isElement(el)) return true

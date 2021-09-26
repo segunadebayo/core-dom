@@ -15,13 +15,16 @@
   },
   "size-limit": [
     {
-      "path": "packages/tiny-num/**/*.esm.js"
+      "path": "packages/tiny-dom-query/**/*.esm.js"
     },
     {
-      "path": "packages/tiny-helpers/**/*.esm.js"
+      "path": "packages/tiny-event/**/*.esm.js"
     },
     {
-      "path": "packages/tiny-list/**/*.esm.js"
+      "path": "packages/tiny-focus/**/*.esm.js"
+    },
+    {
+      "path": "packages/tiny-nodelist/**/*.esm.js"
     }
   ],
   "scripts": {

@@ -19,20 +19,22 @@ export type EventListenerWithPointInfo<T extends AnyPointerEvent = AnyPointerEve
   info: PointerEventInfo,
 ) => void
 
+export const t = (v: any) => Object.prototype.toString.call(v).slice(8, -1)
+
 export const isRef = (v: any): v is RefTarget => {
-  return v && typeof v === "object" && "current" in v
+  return t(v) === "Object" && "current" in v
 }
 
 export const runIfFn = (fn: any): HTMLElement | null => {
-  return typeof fn === "function" ? fn() : fn
+  return t(fn) === "Function" ? fn() : fn
 }
 
 export const isTouchEvent = (v: Event): v is TouchEvent => {
-  return typeof v === "object" && !!(v as TouchEvent).touches
+  return t(v) === "Object" && !!(v as TouchEvent).touches
 }
 
+const fallback = { pageX: 0, pageY: 0, clientX: 0, clientY: 0 }
 export function extractInfo<T extends AnyPointerEvent = AnyPointerEvent>(event: T, type: "page" | "client" = "page") {
-  const fallback = { [`${type}X`]: 0, [`${type}Y`]: 0 }
   const point = isTouchEvent(event) ? event.touches[0] || event.changedTouches[0] || fallback : event
   return {
     point: {
