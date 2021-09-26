@@ -25,7 +25,7 @@ function filterPrimaryPointer(fn: EventListener): EventListener {
   return (event: Event) => {
     const win = ((event as UIEvent).view ?? window) as typeof window
     const isMouseEvent = event instanceof win.MouseEvent
-    const isPrimary = !isMouseEvent || (isMouseEvent && event.button === 0)
+    const isPrimary = !isMouseEvent || (isMouseEvent && (event as MouseEvent).button === 0)
     if (isPrimary) {
       fn(event)
     }
