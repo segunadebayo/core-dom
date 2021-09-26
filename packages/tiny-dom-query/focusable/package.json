@@ -1,0 +1,4 @@
+{
+  "main": "dist/tiny-dom-query-focusable.cjs.js",
+  "module": "dist/tiny-dom-query-focusable.esm.js"
+}

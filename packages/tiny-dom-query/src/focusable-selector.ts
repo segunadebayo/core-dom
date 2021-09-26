@@ -1,0 +1,17 @@
+export const focusableSelector = [
+  "input:not([disabled]):not([type=hidden])",
+  "select:not([disabled])",
+  "textarea:not([disabled])",
+  "button:not([disabled])",
+  "embed",
+  "iframe",
+  "object",
+  "a[href]",
+  "area[href]",
+  "[tabindex]",
+  "audio[controls]",
+  "video[controls]",
+  "*[tabindex]:not([aria-disabled])",
+  "[contenteditable]:not([contenteditable=false])",
+  "details > summary:first-of-type",
+].join(",")

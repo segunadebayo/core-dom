@@ -1,0 +1,4 @@
+{
+  "main": "dist/tiny-dom-query-scrollable.cjs.js",
+  "module": "dist/tiny-dom-query-scrollable.esm.js"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "tiny-focus",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "js",
+    "utils",
+    "tiny-focus"
+  ],
+  "author": "Segun Adebayo <sage@adebayosegun.com>",
+  "homepage": "https://github.com/segunadebayo/js-toolkit#readme",
+  "license": "MIT",
+  "main": "dist/tiny-focus.cjs.js",
+  "module": "dist/tiny-focus.esm.js",
+  "repository": "https://github.com/segunadebayo/core-dom/core/tree/main/packages/tiny-focus",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/segunadebayo/core-dom/issues"
+  },
+  "scripts": {
+    "clean": "rimraf dist"
+  }
+}

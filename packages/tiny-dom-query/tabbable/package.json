@@ -1,0 +1,4 @@
+{
+  "main": "dist/tiny-dom-query-tabbable.cjs.js",
+  "module": "dist/tiny-dom-query-tabbable.esm.js"
+}

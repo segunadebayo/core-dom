@@ -1,0 +1,4 @@
+{
+  "main": "dist/tiny-dom-query-contains.cjs.js",
+  "module": "dist/tiny-dom-query-contains.esm.js"
+}

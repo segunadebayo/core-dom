@@ -1,0 +1,56 @@
+{
+  "name": "tiny-dom-query",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "js",
+    "utils",
+    "tiny-dom-query"
+  ],
+  "author": "Segun Adebayo <sage@adebayosegun.com>",
+  "homepage": "https://github.com/segunadebayo/js-toolkit#readme",
+  "license": "MIT",
+  "main": "dist/tiny-dom-query.cjs.js",
+  "module": "dist/tiny-dom-query.esm.js",
+  "repository": "https://github.com/segunadebayo/js-tookit/core/tree/main/packages/tiny-dom-query",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "attributes",
+    "class",
+    "contains",
+    "disabled",
+    "owner",
+    "focusable",
+    "hidden",
+    "parent",
+    "scrollable",
+    "style",
+    "tabbable"
+  ],
+  "preconstruct": {
+    "entrypoints": [
+      "index.ts",
+      "attributes.ts",
+      "class.ts",
+      "contains.ts",
+      "disabled.ts",
+      "focusable.ts",
+      "hidden.ts",
+      "parent.ts",
+      "owner.ts",
+      "scrollable.ts",
+      "style.ts",
+      "tabbable.ts"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/segunadebayo/js-tookit/issues"
+  },
+  "scripts": {
+    "clean": "rimraf dist"
+  }
+}

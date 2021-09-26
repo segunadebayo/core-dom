@@ -1,0 +1,4 @@
+{
+  "main": "dist/tiny-event-pointer.cjs.js",
+  "module": "dist/tiny-event-pointer.esm.js"
+}

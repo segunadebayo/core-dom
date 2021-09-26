@@ -1,0 +1,38 @@
+{
+  "name": "tiny-event",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "js",
+    "utils",
+    "tiny-event"
+  ],
+  "author": "Segun Adebayo <sage@adebayosegun.com>",
+  "homepage": "https://github.com/segunadebayo/js-toolkit#readme",
+  "license": "MIT",
+  "main": "dist/tiny-event.cjs.js",
+  "module": "dist/tiny-event.esm.js",
+  "repository": "https://github.com/segunadebayo/js-tookit/core/tree/main/packages/tiny-event",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "dom",
+    "pointer"
+  ],
+  "preconstruct": {
+    "entrypoints": [
+      "index.ts",
+      "dom.ts",
+      "pointer.ts"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/segunadebayo/js-tookit/issues"
+  },
+  "scripts": {
+    "clean": "rimraf dist"
+  }
+}
