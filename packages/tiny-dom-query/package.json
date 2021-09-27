@@ -8,11 +8,11 @@
     "tiny-dom-query"
   ],
   "author": "Segun Adebayo <sage@adebayosegun.com>",
-  "homepage": "https://github.com/segunadebayo/js-toolkit#readme",
+  "homepage": "https://github.com/segunadebayo/core-dom#readme",
   "license": "MIT",
   "main": "dist/tiny-dom-query.cjs.js",
   "module": "dist/tiny-dom-query.esm.js",
-  "repository": "https://github.com/segunadebayo/js-tookit/core/tree/main/packages/tiny-dom-query",
+  "repository": "https://github.com/segunadebayo/core-dom/tree/main/packages/tiny-dom-query",
   "sideEffects": false,
   "files": [
     "dist",
@@ -48,7 +48,7 @@
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/segunadebayo/js-tookit/issues"
+    "url": "https://github.com/segunadebayo/core-dom/issues"
   },
   "scripts": {
     "clean": "rimraf dist"

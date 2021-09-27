@@ -1,18 +1,18 @@
 {
-  "name": "tiny-focus",
+  "name": "tiny-dom-focus",
   "version": "0.0.0",
   "description": "",
   "keywords": [
     "js",
     "utils",
-    "tiny-focus"
+    "tiny-dom-focus"
   ],
   "author": "Segun Adebayo <sage@adebayosegun.com>",
-  "homepage": "https://github.com/segunadebayo/js-toolkit#readme",
+  "homepage": "https://github.com/segunadebayo/core-dom#readme",
   "license": "MIT",
-  "main": "dist/tiny-focus.cjs.js",
-  "module": "dist/tiny-focus.esm.js",
-  "repository": "https://github.com/segunadebayo/core-dom/core/tree/main/packages/tiny-focus",
+  "main": "dist/tiny-dom-focus.cjs.js",
+  "module": "dist/tiny-dom-focus.esm.js",
+  "repository": "https://github.com/segunadebayo/core-dom/tree/main/packages/tiny-dom-focus",
   "sideEffects": false,
   "files": [
     "dist"

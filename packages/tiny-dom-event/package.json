@@ -1,18 +1,18 @@
 {
-  "name": "tiny-event",
+  "name": "tiny-dom-event",
   "version": "0.0.0",
   "description": "",
   "keywords": [
     "js",
     "utils",
-    "tiny-event"
+    "tiny-dom-event"
   ],
   "author": "Segun Adebayo <sage@adebayosegun.com>",
   "homepage": "https://github.com/segunadebayo/js-toolkit#readme",
   "license": "MIT",
-  "main": "dist/tiny-event.cjs.js",
-  "module": "dist/tiny-event.esm.js",
-  "repository": "https://github.com/segunadebayo/js-tookit/core/tree/main/packages/tiny-event",
+  "main": "dist/tiny-dom-event.cjs.js",
+  "module": "dist/tiny-dom-event.esm.js",
+  "repository": "https://github.com/segunadebayo/js-tookit/core/tree/main/packages/tiny-dom-event",
   "sideEffects": false,
   "files": [
     "dist",

@@ -1,7 +1,7 @@
 ---
 "tiny-dom-query": patch
-"tiny-event": patch
-"tiny-focus": patch
+"tiny-dom-event": patch
+"tiny-dom-focus": patch
 "tiny-nodelist": patch
 ---
 

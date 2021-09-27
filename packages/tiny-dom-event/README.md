@@ -1,11 +1,11 @@
-# tiny-nodelist
+# tiny-dom-event
 
 ## Installation
 
 ```sh
-yarn add tiny-nodelist
+yarn add tiny-dom-event
 # or
-npm i tiny-nodelist
+npm i tiny-dom-event
 ```
 
 ## Contribution

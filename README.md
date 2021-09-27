@@ -1,6 +1,6 @@
 # Core DOM
 
-A collection of javascript geometry utilities
+A collection of javascript DOM utilities
 
 ## Contributors ✨
 

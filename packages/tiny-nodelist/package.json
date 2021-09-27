@@ -2,13 +2,17 @@
   "name": "tiny-nodelist",
   "version": "0.0.0",
   "description": "",
-  "keywords": ["js", "utils", "tiny-nodelist"],
+  "keywords": [
+    "js",
+    "utils",
+    "tiny-nodelist"
+  ],
   "author": "Segun Adebayo <sage@adebayosegun.com>",
-  "homepage": "https://github.com/segunadebayo/js-toolkit#readme",
+  "homepage": "https://github.com/segunadebayo/core-dom#readme",
   "license": "MIT",
   "main": "dist/tiny-nodelist.cjs.js",
   "module": "dist/tiny-nodelist.esm.js",
-  "repository": "https://github.com/segunadebayo/js-tookit/core/tree/main/packages/tiny-nodelist",
+  "repository": "https://github.com/segunadebayo/core-dom/tree/main/packages/tiny-nodelist",
   "sideEffects": false,
   "files": [
     "dist"
@@ -17,7 +21,7 @@
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/segunadebayo/js-tookit/issues"
+    "url": "https://github.com/segunadebayo/core-dom/issues"
   },
   "scripts": {
     "clean": "rimraf dist"

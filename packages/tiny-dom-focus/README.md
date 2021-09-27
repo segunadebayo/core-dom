@@ -1,11 +1,11 @@
-# tiny-nodelist
+# tiny-dom-focus
 
 ## Installation
 
 ```sh
-yarn add tiny-nodelist
+yarn add tiny-dom-focus
 # or
-npm i tiny-nodelist
+npm i tiny-dom-focus
 ```
 
 ## Contribution

@@ -1,22 +1,17 @@
-# @/tiny-dom-fns
-
-
+# tiny-dom-query
 
 ## Installation
 
 ```sh
-yarn add  @/tiny-dom-fns
+yarn add tiny-dom-query
 # or
-npm i  @/tiny-dom-fns
+npm i tiny-dom-query
 ```
 
 ## Contribution
 
-Yes please! See the
-[contributing guidelines](https://github.com/chakra-ui/core/blob/main/CONTRIBUTING.md)
-for details.
+Yes please! See the [contributing guidelines](https://github.com/chakra-ui/core/blob/main/CONTRIBUTING.md) for details.
 
 ## Licence
 
-This project is licensed under the terms of the
-[MIT license](https://github.com/chakra-ui/core/blob/main/LICENSE).
+This project is licensed under the terms of the [MIT license](https://github.com/chakra-ui/core/blob/main/LICENSE).
