@@ -1,6 +1,6 @@
 type Root = Document | Element | null
 
-export function querySelectorAll<T extends HTMLElement>(root: Root, selector: string) {
+export function queryElements<T extends HTMLElement>(root: Root, selector: string) {
   return Array.from(root?.querySelectorAll<T>(selector) ?? [])
 }
 
@@ -11,6 +11,18 @@ export function itemById<T extends HTMLElement>(v: T[], id: string) {
 export function indexOfId<T extends HTMLElement>(v: T[], id: string) {
   const item = itemById(v, id)
   return item ? v.indexOf(item) : -1
+}
+
+export function nextById<T extends HTMLElement>(v: T[], id: string, loop?: boolean) {
+  let idx = indexOfId(v, id)
+  idx = loop ? (idx + 1) % v.length : Math.min(idx + 1, v.length - 1)
+  return v[idx]
+}
+
+export function prevById<T extends HTMLElement>(v: T[], id: string, loop?: boolean) {
+  let idx = indexOfId(v, id)
+  idx = loop ? (idx - 1 + v.length) % v.length : Math.max(0, idx - 1)
+  return v[idx]
 }
 
 export function findByText<T extends HTMLElement>(v: T[], text: string, currentId?: string | null) {
@@ -31,10 +43,6 @@ export function findByText<T extends HTMLElement>(v: T[], text: string, currentI
   return matched
 }
 
-/**
- * Sort an array of DOM nodes according to the HTML tree order
- * @see https://dom.spec.whatwg.org/#trees
- */
 export function sortByTreeOrder<T extends HTMLElement>(v: T[]) {
   return v.sort((a, b) => (a.compareDocumentPosition(b) & 2 ? 1 : -1))
 }
