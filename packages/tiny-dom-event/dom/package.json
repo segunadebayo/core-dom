@@ -1,4 +1,4 @@
 {
-  "main": "dist/tiny-event-dom.cjs.js",
-  "module": "dist/tiny-event-dom.esm.js"
+  "main": "dist/tiny-dom-event-dom.cjs.js",
+  "module": "dist/tiny-dom-event-dom.esm.js"
 }
