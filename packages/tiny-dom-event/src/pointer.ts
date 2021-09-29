@@ -6,7 +6,7 @@ export function addPointerEvent<K extends keyof EventMap>(
   target: DOMEventTarget,
   event: K,
   listener: (event: EventMap[K], info: PointerEventInfo) => void,
-  options?: EventListenerOptions,
+  options?: boolean | AddEventListenerOptions,
 ) {
   return addDomEvent(target, getEventName(event), wrapHandler(listener, event === "pointerdown"), options)
 }

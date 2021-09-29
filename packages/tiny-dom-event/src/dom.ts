@@ -4,7 +4,7 @@ export function addDomEvent<K extends keyof EventMap>(
   target: DOMEventTarget,
   event: K,
   listener: (event: EventMap[K]) => void,
-  options?: AddEventListenerOptions,
+  options?: boolean | AddEventListenerOptions,
 ) {
   const node = isRef(target) ? target.current : runIfFn(target)
   node?.addEventListener(event, listener, options)
